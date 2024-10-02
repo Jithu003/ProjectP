@@ -1,5 +1,3 @@
-Project
-
 Design Patterns Exercise 1
 
 This repository showcases implementations of various software design patterns, demonstrating both Behavioral, Creational, and Structural patterns through practical use cases.
