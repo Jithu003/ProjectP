@@ -60,3 +60,69 @@ java <MainClassName>
 About
 
 This project implements six design patterns: two Behavioral, two Creational, and two Structural patterns. It provides real-world use cases to demonstrate practical applications of each design pattern.
+
+Real-Time Chat Application
+
+This project is a simple real-time chat application that allows users to join or create chat rooms and exchange messages in real time. The application demonstrates various design patterns such as Observer, Singleton, and Adapter to ensure modularity and scalability.
+Features
+
+    Create/Join Chat Rooms: Users can create chat rooms or join existing ones by entering a unique room ID.
+    Real-Time Messaging: All messages are transmitted in real-time, ensuring instant communication within the chat room.
+    Active Users List: Displays a list of users who are currently active in the chat room.
+    Private Messaging (Optional): Users can send private messages to other participants.
+    Message History: Users can view the chat history when they join a room, even if they weren't present when the previous messages were sent.
+
+Key Design Patterns
+
+    Observer Pattern: Used to notify clients of new messages and user activities.
+    Singleton Pattern: Manages the state of the chat rooms and ensures there is only one instance of a chat room manager.
+    Adapter Pattern: Facilitates communication through different protocols (e.g., WebSocket, HTTP).
+
+Technologies Used
+
+    Node.js: Backend server to handle socket connections and routes.
+    Socket.io: For real-time, bidirectional communication between the server and the clients.
+    Express.js: To serve the front-end and manage routes.
+    HTML/CSS/JavaScript: Front-end technologies to create the chat interface.
+
+How to Run the Project
+
+    Clone the repository:
+
+    bash
+
+git clone <repository-url>
+cd chat-app
+
+Install dependencies:
+
+bash
+
+npm install
+
+Start the server:
+
+bash
+
+    node src/server.js
+
+    Open index.html in your browser to start using the chat application.
+
+Folder Structure
+
+bash
+
+/chat-app
+
+├── /src
+    ├── server.js
+    ├── chatRoomManager.js
+    ├── socketHandler.js
+    └── routes.js
+
+
+Future Improvements
+
+    User authentication and authorization.
+    File sharing within chat rooms.
+    Enhanced private messaging with encryption.
